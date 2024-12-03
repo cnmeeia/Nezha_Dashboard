@@ -30,3 +30,16 @@ na.19510272.xyz {
 }
 
 ```
+
+
+```powershell
+# 使用以下命令验证文件是否语法正确
+
+caddy validate --config /opt/caddy/r2.caddyfile
+
+# 如果验证通过，运行以下命令启动：
+
+caddy run --config /opt/caddy/r2.caddyfile
+
+
+```
