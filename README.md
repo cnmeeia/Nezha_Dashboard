@@ -17,6 +17,10 @@ cd data && cat *.yaml
 
 ```
 
+wget https://github.com/cnmeeia/caddy/releases/download/v0.4.2/caddy
+
+mv caddy /usr/bin && chmod +x /usr/bin/caddy
+
 caddy 反代 nezha
 
 ```powershell
