@@ -17,13 +17,15 @@ cd data && cat *.yaml
 
 ```
 
+caddy 反代 nezha
+
+```powershell
+
 wget https://github.com/cnmeeia/caddy/releases/download/v0.4.2/caddy
 
 mv caddy /usr/bin && chmod +x /usr/bin/caddy
 
-caddy 反代 nezha
 
-```powershell
 (ssl_cert) {
     tls /opt/caddy/rsa.pem /opt/caddy/key.pem
 }
