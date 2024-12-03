@@ -16,3 +16,17 @@ docker exec -it nezha-dashboard sh
 cd data && cat *.yaml
 
 ```
+
+caddy 反代 nezha
+
+```powershell
+(ssl_cert) {
+    tls /opt/caddy/rsa.pem /opt/caddy/key.pem
+}
+
+na.19510272.xyz {
+    import ssl_cert
+    reverse_proxy http://127.0.0.1:8008
+}
+
+```
